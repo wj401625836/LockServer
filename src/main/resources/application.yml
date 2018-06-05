@@ -1,5 +1,6 @@
 server:
   port: 8080
+
 spring:
   datasource:
     username: root
@@ -8,8 +9,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
     schema:
-       - classpath:sql/department.sql
-       - classpath:sql/employee.sql
+       - classpath:sql/user.sql
 
 #   数据源其他配置
     initialSize: 5
@@ -28,3 +28,6 @@ spring:
     maxPoolPreparedStatementPerConnectionSize: 20
     useGlobalDataSourceStat: true
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
