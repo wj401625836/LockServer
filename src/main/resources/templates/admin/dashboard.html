@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://getbootstrap.com/docs/4.0/examples/dashboard/ -->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>蓝牙指纹挂锁</title>
+
+		<style type="text/css">
+			.nav {
+				background-color: #F5F5DC;
+			}
+
+			.nav ul {
+				margin: 0;padding: 0;
+				list-style-type: none;
+				line-height: 3em;
+			}
+
+			.nav a {
+				display: block;
+				width: 10em;
+				text-align: center;
+				text-decoration: none;
+				background-color: #CCCCCC;
+			}
+
+			.nav a:hover {
+				background-color: #E6E6FA;
+			}
+
+		</style>
+
+	<body>
+		<div class="nav" >
+			<ul>
+				<li><a href="#" th:href="@{/user/userlist}">锁用户信息</a></li>
+				<li><a href="#" th:href="@{/unlockrecord/unlockrecordlist}">锁记录信息</a></li>
+				<li><a href="#">锁应用信息</a></li>
+				<li><a href="#">锁版本信息</a></li>
+				<li><a href="#" th:href="@{/sellstatics/sellstaticslist}">锁销量信息</a></li>
+			</ul>
+		</div>
+	</body>
+</html>
